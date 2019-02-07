@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "applicationType": "microservice",
+    "gitCompany": "",
+    "baseName": "angularpoc",
+    "packageName": "com.roussell.mx",
+    "packageFolder": "com/roussell/mx",
+    "serverPort": 8081,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.8.1",
+    "jwtSecretKey": "MWYwZDE5ZDE3NTE5YzFhNTFkNTQ0NDg0NmM2ZmE0NDNjNDU0Y2FhYTQ0Zjc0Mjk1ZTI0NjU1NjVmY2Q0YzE2OGNhYzkzYzljZGIxNWYzZGY2YmYzYmNjMDRhY2MwMDIyNWZlYWYzY2M0NTI1MWVjNDc0Njg0MDczNjRiMTZkNzc=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  },
+  "git-provider": "GitHub",
+  "git-company": "jennypherroussell",
+  "repository-name": "poc-angular"
+}

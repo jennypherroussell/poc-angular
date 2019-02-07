@@ -1,0 +1,16 @@
+version: '2'
+services:
+    angularpoc-mongodb:
+        image: mongo:4.0.2
+        ports:
+            - "27017:27017"
+        command: mongos --configdb angularpoc-mongodb-config
+    angularpoc-mongodb-node:
+        build:
+            context: .
+            dockerfile: mongodb/MongoDB.Dockerfile
+        command: mongod --replSet rs1 --noprealloc --smallfiles
+    angularpoc-mongodb-config:
+        image: mongo:4.0.2
+        container_name: angularpoc-mongodb-config
+        command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db
